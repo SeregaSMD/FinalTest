@@ -75,19 +75,12 @@ int CountStringsLessNum(string[] inputArray, int symbolsNum)
 
 void PrintArray(string [] arr, int symbolsNum)
 {
-    if (arr.Length!=0)
-    {
     Console.Write($"Here are all the srings from data.txt with size less or equal to {symbolsNum} characters: ");
     for (int i = 0; i < arr.Length; i++)
     {
         Console.Write(arr[i]);
         if (i < arr.Length - 1) Console.Write(", ");
         else Console.Write(".");
-    }
-    }
-    else
-    {
-        Console.Write($"There are no srings in inputArray with size less or equal to {symbolsNum} characters: ");
     }
 }
 
