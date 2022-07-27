@@ -88,3 +88,4 @@ int symbolsNum = 3;
 string[] inputArray = EnterArray();
 string[] outputArray = FilterStringArray(inputArray, symbolsNum);
 PrintArray (outputArray, symbolsNum);
+File.WriteAllLines("result.txt", outputArray);
